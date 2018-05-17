@@ -48,7 +48,7 @@ Asynchronous readdir(3). Reads the contents of a directory. The callback gets tw
 
 Example:
 ```javascript
-smb2Client.readdir('Windows\\System32', function(err, files){
+smb2Client.readdir('Windows\\System32', {verbose: true}, function(err, files){
     if(err) throw err;
     console.log(files);
 });
