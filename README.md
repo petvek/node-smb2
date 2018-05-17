@@ -44,8 +44,9 @@ var smb2Client = new SMB2({
 ```
 
 ### smb2Client.readdir ( path, [options], callback )
-```options``` Object
+- ```options``` Object
     - ```verbose``` Boolean | Null default = 'false'
+
 Asynchronous readdir(3). Reads the contents of a directory. The callback gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'.
 
 Example:
